@@ -5,3 +5,4 @@
 - Eduardo Flores Coppede
 - Leonardo Loayza Vargas
 - Carlos Pradel
+- Richard Parra Zegarra
