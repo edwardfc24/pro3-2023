@@ -3,6 +3,3 @@
 - Todos deben subir un cambio en la documentación
 - Este cambio sólo está en dev
 - Eduardo Flores Coppede
-- Leonardo Loayza Vargas
-- Carlos Pradel
-- Richard Parra Zegarra
