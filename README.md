@@ -6,3 +6,4 @@
 - Leonardo Loayza Vargas
 - Carlos Pradel
 - Richard Parra Zegarra
+- Jesús Supayave
