@@ -18,3 +18,18 @@ public class tarea1 {
         //  siempre toma el valor b va a tomar el valor de c y a el de b
     }
 }
+                        -----aqui va el codigo -----
+
+    public static void main(String[] args) {
+
+        System.out.println("el fibonacci al indice  : "+fibonacciRecursivo(9));
+    }
+    public static int fibonacciRecursivo(int limite){
+        if (limite ==1) {
+            return 0;
+        } if (limite == 2){
+            return 1;
+        }
+            return fibonacciRecursivo(limite-1)  +  fibonacciRecursivo(limite-2);
+
+        }
