@@ -36,17 +36,19 @@ public class metodos {
                 derecha--;
             }
             if (izquierda<derecha){
-                int temp= arreglo[izquierda];
+                /*int temp= arreglo[izquierda];
                 arreglo[izquierda]= arreglo[derecha];
                 arreglo[derecha]= temp;
                 //izquierda++;
-                //derecha--;
+                //derecha--;*/
+                intercambiar(arreglo, izquierda, derecha);
             }
         }
         if(derecha>inicio){
-            int temp= arreglo[inicio];
+            /*int temp= arreglo[inicio];
             arreglo[inicio]= arreglo[derecha];
-            arreglo[derecha]= temp;
+            arreglo[derecha]= temp;*/
+            intercambiar(arreglo, inicio,derecha );
         }
         dividirArr(arreglo, inicio, derecha-1);
         dividirArr(arreglo, derecha+1,fin);
