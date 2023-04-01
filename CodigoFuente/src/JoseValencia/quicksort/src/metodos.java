@@ -15,6 +15,11 @@ public class metodos {
         }
         return generado;
     }
+    public static void intercambiar(int[] arreglo, int reemplazado, int reemplazo) {
+        int temporal = arreglo[reemplazado];
+        arreglo[reemplazado] = arreglo[reemplazo];
+        arreglo[reemplazo] = temporal;
+    }
     public void mostrarArreglo(int[] arreglo) {
         System.out.print("[ ");
         for (int posicion = 0; posicion < arreglo.length; posicion++) {
