@@ -35,7 +35,7 @@ public class MandelBrotZoom extends JFrame {
                     double x = xMin + (xMax - xMin) * e.getX() / _ancho;
                     double y = yMin + (yMax - yMin) * e.getY() / _alto;
                     Acercarse(x, y);
-                    
+
                 }
             }
         });
