@@ -7,34 +7,43 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.Constructor;
 
 public class Mandelbrot extends JFrame implements ActionListener {
-    //private double centerX, centerY; // coordenadas del centro del plano complejo
-    private double scale; // factor de escala del zoom
-    private int ancho;
-    private int alto;
     private int[][] pixeles;
-    private JButton btnZoom = new JButton("zoom");
+    double xMinimo = -2;
+    double xMaximo = 2;
+    double yMinimo = -2;
+    double yMaximo = 2;
+    JPanel panelBotones = new JPanel();
+    private JButton btnZoom = new JButton("Zoom");
+    private JButton btnAlejarse = new JButton("Alejarse");
     private int _maximoIteraciones;
 
     public Mandelbrot(int cantidadIteraciones){
         this._maximoIteraciones = cantidadIteraciones;
-        ancho = 0;
-        alto = 0;
-        scale = 1;
         setTitle("Mandelbrot Básico");
         setSize(800,600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
-        iniciarComponentes();
         setVisible(true);
+        // Agregar botones de zoom
+        JPanel panelBotones = new JPanel();
+        panelBotones.setLayout(new FlowLayout());
+        // Establece el tamaño del botón
+        btnZoom.setPreferredSize(new Dimension(100, 50));
+        btnAlejarse.setPreferredSize(new Dimension(100,50));
+
+        btnZoom.addActionListener(this);
+        btnAlejarse.addActionListener(this);
+
+        panelBotones.add(btnZoom);
+        panelBotones.add(btnAlejarse);
+
+        add(panelBotones, BorderLayout.NORTH);
+        panelBotones.setLayout(new FlowLayout());
     }
 
     @Override
     public void paint(Graphics g) {
-        double xMinimo = -2;
-        double xMaximo = 2;
-        double yMinimo = -2;
-        double yMaximo = 2;
         // obtenemos los limites de un dibujo
         int ancho = getWidth();
         int alto = getHeight();
@@ -44,8 +53,12 @@ public class Mandelbrot extends JFrame implements ActionListener {
                 double xCalculado = xMinimo + (xMaximo - xMinimo) * x / ancho;
                 double yCalculado = yMinimo + (yMaximo - yMinimo) * y / alto;
                 int color = ejecutarMandelbrot(xCalculado, yCalculado);
-                g.setColor(new Color(color));
-                g.fillRect(x,y,1,1);
+                if (color == 255){
+                    g.setColor(Color.ORANGE);
+                }else{
+                    g.setColor(Color.BLACK);
+                }
+                g.fillRect(x, y, 1, 1);
             }
         }
         //repaint();
@@ -71,25 +84,33 @@ public class Mandelbrot extends JFrame implements ActionListener {
         }
         return 255;
     }
-    public void iniciarComponentes(){
-        setLayout(null);
-        btnZoom.setBounds(10,10,100,30);
-
-        this.add(btnZoom);
-        btnZoom.addActionListener(this);
-    }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == btnZoom){
-            scale *= 1.1; // aumenta el factor de escala en un 10%
-
-            // redimensiona el fractal para ajustarlo a la nueva escala
-            ancho = (int) (ancho * scale);
-            alto = (int) (alto * scale);
-
-            // vuelve a dibujar el fractal con las nuevas dimensiones y escala
-            ejecutarMandelbrot(ancho,alto);
+        // calcular los nuevos limites del fractal
+        double nuevoXMin = xMinimo;
+        double nuevoXMax = xMaximo;
+        double nuevoYMin = yMinimo;
+        double nuevoYMax = yMaximo;
+        if (e.getSource() == btnZoom){// Si se presionó el botón de acercar
+            double factor = 0.1;
+            nuevoXMin += (xMaximo - xMinimo) * factor;
+            nuevoXMax -= (xMaximo - xMinimo) * factor;
+            nuevoYMin += (yMaximo - yMinimo) * factor;
+            nuevoYMax -= (yMaximo - yMinimo) * factor;
+        } else if (e.getSource() == btnAlejarse){// Si se presionó el botón de disminuir
+            double factor = 0.1;
+            nuevoXMin -= (xMaximo - xMinimo) * factor;
+            nuevoXMax += (xMaximo - xMinimo) * factor;
+            nuevoYMin -= (yMaximo - yMinimo) * factor;
+            nuevoYMax += (yMaximo - yMinimo) * factor;
         }
+        // Actualizar los límites del fractal
+        xMinimo = nuevoXMin;
+        xMaximo = nuevoXMax;
+        yMinimo = nuevoYMin;
+        yMaximo = nuevoYMax;
+
+        repaint();
     }
 }
