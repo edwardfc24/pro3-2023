@@ -65,8 +65,63 @@ public class Lista {
         }
         return "El índice no puede ser negativo";
     }
-    public void eliminarValor(Object eliminado){
-        
+
+    public void eliminarValor(Object eliminado) {
+        Nodo anterior = null;
+        Nodo actual = this.raiz;
+        Nodo siguiente = raiz.getSiguiente();
+        while (actual != null) {
+            if (actual.getValor().equals(eliminado)) {
+                // Estamos en el caso de la raiz
+                if (anterior == null) {
+                    this.raiz = siguiente;
+                    break;
+                }
+                // Estamos en el caso de la cola
+                if (siguiente == null) {
+                    anterior.setSiguiente(null);
+                    break;
+                }
+                // El resto de casos
+                if (actual != null && siguiente != null) {
+                    actual.setSiguiente(null);
+                    anterior.setSiguiente(siguiente);
+                    break;
+                }
+
+            }
+            anterior = actual;
+            actual = siguiente;
+            siguiente = (siguiente != null) ? siguiente.getSiguiente() : null;
+        }
+    }
+
+    public void eliminarValorPorPosicion(int posicion) {
+        Nodo anterior = null;
+        Nodo actual = this.raiz;
+        Nodo siguiente = this.raiz.getSiguiente();
+        if (posicion >= 0 && posicion < this.longitud) {
+            int contador = 0;
+            while (contador < posicion) {
+                anterior = actual;
+                actual = siguiente;
+                siguiente = actual.getSiguiente();
+                contador++;
+            }
+            // Este es el caso de la raiz
+            if (anterior == null) {
+                this.raiz = siguiente;
+            }
+            // Estamos en el caso de la cola
+            else if (siguiente == null) {
+                anterior.setSiguiente(null);
+            }
+            // El resto de casos
+            else if (actual != null && siguiente != null) {
+                actual.setSiguiente(null);
+                anterior.setSiguiente(siguiente);
+            }
+        }
     }
 }
 
