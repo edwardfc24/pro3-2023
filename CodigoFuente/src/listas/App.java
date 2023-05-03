@@ -20,6 +20,15 @@ public class App {
         listaDoble.agregarNodoAlFinal("tres");
         listaDoble.agregarNodoAlPrincipio("dos");
         System.out.println(listaDoble.toString());
+        // Ahora probamos la lectura de archivos
+        ManejadorArchivos manejador = new ManejadorArchivos();
+        manejador.leerArchivo("D:/Prueba.txt");
+        String rutaNueva = "D:/PruebaEscritura.txt";
+        System.out.println();
+        manejador.escribirArchivo(rutaNueva, "Esteas líneas se escribieron\ndesde el editor de código\n Saludos!!!!");
+        manejador.leerArchivo(rutaNueva);
+        System.out.println("Creando carpeta");
+        manejador.escribirArchivo("D:/Prueba", null);
     }
 }
 
