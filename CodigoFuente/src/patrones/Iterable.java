@@ -1,2 +1,5 @@
-package patrones;public interface Iterable {
+package patrones;
+
+public interface Iterable<T> {
+    Iterator<T> getIterador();
 }
