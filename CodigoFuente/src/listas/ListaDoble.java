@@ -25,6 +25,7 @@ public class ListaDoble {
             this.raiz.setAnterior(nuevoNodo);
             this.raiz = nuevoNodo;
         }
+        longitud++;
     }
 
     public void agregarNodoAlFinal(Object valor) {
@@ -37,6 +38,25 @@ public class ListaDoble {
             this.cola.setSiguiente(nuevoNodo);
             this.cola = nuevoNodo;
         }
+        longitud++;
+    }
+
+    public Object obtenerValor(int indice) {
+        NodoDoble temporal = this.raiz;
+        if (indice >= 0) {
+            int contador = 0;
+
+            while (contador < indice) {
+                if (temporal != null) {
+                    temporal = temporal.getSiguiente();
+                    contador++;
+                } else {
+                    return "El índice buscado no se encuentra en la lista";
+                }
+            }
+            return temporal.getValor();
+        }
+        return "El índice no puede ser negativo";
     }
 
     @Override
