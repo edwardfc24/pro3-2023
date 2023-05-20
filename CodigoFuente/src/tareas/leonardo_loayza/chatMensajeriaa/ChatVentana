@@ -1,0 +1,83 @@
+package tareas.leonardo_loayza.chatMensajeriaa;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ChatVentana extends JFrame implements Observer {
+    private String nombre;
+    private JTextArea txtchatArea;
+    private JTextField txtmensajeField;
+    private JButton btnenviar;
+    private List<Observer> observadores;
+
+    public ChatVentana(String nombre) {
+        super("Chat de " + nombre);
+        this.nombre = nombre;
+        this.observadores = new ArrayList<>();
+
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(400, 300);
+        txtchatArea = new JTextArea();
+        txtchatArea.setEditable(false);
+
+        txtmensajeField = new JTextField();
+        btnenviar = new JButton("Enviar");
+        btnenviar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String mensaje = txtmensajeField.getText();
+                recibirMensaje(mensaje, nombre);
+                notificarObservadores(mensaje, nombre); // Agregamos el nombre del remitente al notificar a los observadores
+                txtmensajeField.setText("");
+            }
+        });
+
+        JPanel panel = new JPanel(new BorderLayout());
+        panel.add(new JScrollPane(txtchatArea), BorderLayout.CENTER);
+
+        JPanel panelEntrada = new JPanel(new BorderLayout());
+        panelEntrada.add(txtmensajeField, BorderLayout.CENTER);
+        panelEntrada.add(btnenviar, BorderLayout.EAST);
+        panel.add(panelEntrada, BorderLayout.SOUTH);
+        add(panel);
+    }
+
+    public void agregarObservador(Observer observador) {
+        observadores.add(observador);
+    }
+
+    public void notificarObservadores(String mensaje, String remitente) {
+        for (Observer observador : observadores) {
+            observador.recibirMensaje(mensaje, remitente);
+        }
+    }
+
+    @Override
+    public void recibirMensaje(String mensaje, String remitente) {
+        txtchatArea.append(remitente + ": " + mensaje + "\n");
+    }
+
+
+    public static void main(String[] args) {
+
+        Persona juan = new Persona("Juan");
+        Persona pepe = new Persona("Pepe");
+
+        ChatVentana juanVentana = new ChatVentana("Juan");
+        ChatVentana pepeVentana = new ChatVentana("Pepe");
+
+        juan.agregarObservador(pepe);
+        pepe.agregarObservador(juan);
+
+        juanVentana.agregarObservador(pepeVentana);
+        pepeVentana.agregarObservador(juanVentana);
+
+        juanVentana.setVisible(true);
+        pepeVentana.setVisible(true);
+    }
+
+}
