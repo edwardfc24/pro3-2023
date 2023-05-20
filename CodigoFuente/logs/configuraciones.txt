@@ -1,0 +1,43 @@
+//////////// Esto va en el archivo log4j2.xml ///////////////////////////
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info" name="MyApp">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </Console>
+        <File name="LogFile" fileName="logs/project.log">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="LogFile"/>
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="LogFile"/>
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
+///////////////////////////////////////////////////////////////////////////
+//////////////////// Esto va en el archivo pom.xml ////////////////////////
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.20.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.20.0</version>
+        </dependency>
+    </dependencies>
+    ////////////////////////////////////////////////////////////////////////////

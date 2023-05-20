@@ -1,0 +1,6 @@
+2023-05-17 19:04:58,513 INFO p.Pro3Informa [main] Se inició la clase Pro3Informa Correctamente
+2023-05-17 19:04:58,516 DEBUG p.Pro3Informa [main] Se envió el mensaje a los suscriptores
+2023-05-17 19:04:58,516 ERROR p.Pro3Informa [main] Esto verías si habría un error
+2023-05-17 19:04:58,517 WARN p.Pro3Informa [main] El Observer class patrones.Suscriptor se ha desuscrito
+2023-05-17 19:04:58,517 DEBUG p.Pro3Informa [main] Se envió el mensaje a los suscriptores
+2023-05-17 19:04:58,517 ERROR p.Pro3Informa [main] Esto verías si habría un error

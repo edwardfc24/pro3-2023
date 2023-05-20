@@ -1,0 +1,26 @@
+2023-05-17 15:04:14,823 INFO Logs [main] Este es un registro de información
+2023-05-17 15:04:14,825 WARN Logs [main] Esta es una advertencia
+2023-05-17 15:04:14,825 ERROR Logs [main] Este es un error
+2023-05-17 15:04:36,030 INFO Logs [main] Este es un registro de información
+2023-05-17 15:04:36,032 DEBUG Logs [main] Esta información sirve para debuguear
+2023-05-17 15:04:36,033 WARN Logs [main] Esta es una advertencia
+2023-05-17 15:04:36,033 ERROR Logs [main] Este es un error
+2023-05-17 18:37:20,578 INFO Logs [main] Este es un registro de información
+2023-05-17 18:37:20,580 DEBUG Logs [main] Esta información sirve para debuguear
+2023-05-17 18:37:20,580 WARN Logs [main] Esta es una advertencia
+2023-05-17 18:37:20,581 ERROR Logs [main] Este es un error
+2023-05-17 18:44:13,567 INFO Logs [main] Este es un registro de información
+2023-05-17 18:44:13,569 DEBUG Logs [main] Esta información sirve para debuguear
+2023-05-17 18:44:13,569 WARN Logs [main] Esta es una advertencia
+2023-05-17 18:44:13,569 ERROR Logs [main] Este es un error
+2023-05-17 18:53:45,855 INFO Logs [main] Este es un registro de información
+2023-05-17 18:53:45,857 WARN Logs [main] Esta es una advertencia
+2023-05-17 18:53:45,858 ERROR Logs [main] Este es un error
+2023-05-17 18:54:33,693 INFO Logs [main] Este es un registro de información
+2023-05-17 18:54:33,695 DEBUG Logs [main] Esta información sirve para debuguear
+2023-05-17 18:54:33,695 WARN Logs [main] Esta es una advertencia
+2023-05-17 18:54:33,695 ERROR Logs [main] Este es un error
+2023-05-17 18:59:42,412 INFO Logs [main] Este es un registro de información
+2023-05-17 18:59:42,415 DEBUG Logs [main] Esta información sirve para debuguear
+2023-05-17 18:59:42,415 WARN Logs [main] Esta es una advertencia
+2023-05-17 18:59:42,415 ERROR Logs [main] Este es un error
