@@ -1,0 +1,9 @@
+package tareas.leonardo_loayza.chatMensajeriaa;
+
+public interface Observer {
+    void recibirMensaje(String mensaje, String remitente);
+}
+
+
+
+
