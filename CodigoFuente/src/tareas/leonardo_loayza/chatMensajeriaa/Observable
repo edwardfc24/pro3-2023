@@ -1,0 +1,8 @@
+package tareas.leonardo_loayza.chatMensajeriaa;
+
+public interface Observable {
+    void agregarObservador(Observer observador);
+    void notificarObservadores(String mensaje,String remitente);
+}
+
+
