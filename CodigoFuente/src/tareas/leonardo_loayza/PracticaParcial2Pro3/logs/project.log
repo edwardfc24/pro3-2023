@@ -1,0 +1,80 @@
+2023-06-08 22:59:45,540 INFO S.ServidorObject [main] Servidor Encendido
+2023-06-08 22:59:53,491 INFO S.ServidorObject [main] Cliente conectado
+2023-06-08 22:59:53,495 INFO S.ClienteObject [main] Conexion realizada
+2023-06-08 22:59:53,499 INFO S.ServidorObject [main] Servidor: Jugada 1: A,5
+2023-06-08 22:59:53,501 INFO S.ClienteObject [main] Conexion realizada
+2023-06-08 22:59:53,502 INFO S.ServidorObject [main] Cliente conectado
+2023-06-08 22:59:53,502 INFO S.ServidorObject [main] Servidor: Jugada 2: C,1
+2023-06-13 00:02:56,725 INFO S.ServidorObject [main] Servidor Encendido
+2023-06-13 00:03:06,272 INFO S.ServidorObject [main] Cliente conectado
+2023-06-14 12:57:55,389 INFO S.ServidorObject [main] Servidor Encendido
+2023-06-14 12:58:04,360 INFO S.ServidorObject [main] Cliente conectado
+2023-06-14 12:58:04,364 INFO S.ClienteObject [main] Conexion realizada
+2023-06-14 12:58:04,368 INFO S.ServidorObject [main] Servidor: Jugada 1: A,5
+2023-06-14 12:58:04,371 INFO S.ClienteObject [main] Conexion realizada
+2023-06-14 12:58:04,371 INFO S.ServidorObject [main] Cliente conectado
+2023-06-14 12:58:04,371 INFO S.ServidorObject [main] Servidor: Jugada 2: C,1
+2023-06-14 14:08:10,116 INFO S.ServidorObject [main] Servidor Encendido
+2023-06-14 14:08:10,121 INFO S.ServidorObject [main] Esperando al jugador 2...
+2023-06-14 14:08:53,129 INFO S.ServidorObject [main] Servidor Encendido
+2023-06-14 14:08:53,132 INFO S.ServidorObject [main] Esperando al jugador 2...
+2023-06-14 14:09:03,571 INFO S.ServidorObject [main] Servidor Encendido
+2023-06-14 14:09:03,575 INFO S.ServidorObject [main] Esperando al jugador 2...
+2023-06-14 14:10:40,412 INFO S.ServidorObject [AWT-EventQueue-0] Servidor Encendido
+2023-06-14 14:10:40,417 INFO S.ServidorObject [AWT-EventQueue-0] Esperando al jugador 2...
+2023-06-14 14:20:20,607 INFO S.ServidorObject [AWT-EventQueue-0] Servidor Encendido
+2023-06-14 14:20:20,611 INFO S.ServidorObject [AWT-EventQueue-0] Esperando al jugador 2...
+2023-06-14 14:20:33,979 INFO S.ServidorObject [AWT-EventQueue-0] Cliente conectado
+2023-06-14 14:20:33,983 INFO S.ClienteObject [AWT-EventQueue-0] Conexion realizada
+2023-06-14 14:20:33,988 INFO S.ServidorObject [AWT-EventQueue-0] Servidor: richard
+2023-06-14 14:50:40,960 INFO S.ServidorObject [AWT-EventQueue-0] Servidor Encendido
+2023-06-14 14:50:40,963 INFO S.ServidorObject [AWT-EventQueue-0] Esperando al jugador 2...
+2023-06-14 14:50:48,268 INFO S.ServidorObject [AWT-EventQueue-0] Cliente conectado
+2023-06-14 14:50:48,272 INFO S.ClienteObject [AWT-EventQueue-0] Conexion realizada
+2023-06-14 14:50:48,277 INFO S.ServidorObject [AWT-EventQueue-0] Servidor: rata
+2023-06-14 15:11:02,553 INFO S.ServidorObject [AWT-EventQueue-0] Servidor Encendido
+2023-06-14 15:11:02,558 INFO S.ServidorObject [AWT-EventQueue-0] Esperando al jugador 2...
+2023-06-14 15:29:56,461 INFO S.ServidorObject [AWT-EventQueue-0] Servidor Encendido
+2023-06-14 15:29:56,464 INFO S.ServidorObject [AWT-EventQueue-0] Esperando al jugador 2...
+2023-06-14 15:30:08,328 INFO S.ServidorObject [AWT-EventQueue-0] Cliente conectado
+2023-06-14 15:30:08,333 INFO S.ClienteObject [AWT-EventQueue-0] Conexion realizada
+2023-06-14 15:30:08,338 INFO S.ServidorObject [AWT-EventQueue-0] Servidor: renso
+2023-06-14 15:30:53,299 INFO S.ServidorObject [AWT-EventQueue-0] Servidor Encendido
+2023-06-14 15:30:53,302 INFO S.ServidorObject [AWT-EventQueue-0] Esperando al jugador 2...
+2023-06-14 15:35:51,703 INFO S.ServidorObject [AWT-EventQueue-0] Servidor Encendido
+2023-06-14 15:35:51,706 INFO S.ServidorObject [AWT-EventQueue-0] Esperando al jugador 2...
+2023-06-14 15:36:55,339 INFO S.ServidorObject [AWT-EventQueue-0] Cliente conectado
+2023-06-14 15:36:55,344 INFO S.ClienteObject [AWT-EventQueue-0] Conexion realizada
+2023-06-14 15:36:55,348 INFO S.ServidorObject [AWT-EventQueue-0] Servidor: rosarosa
+2023-06-14 15:41:15,588 INFO S.ServidorObject [AWT-EventQueue-0] Servidor Encendido
+2023-06-14 15:41:15,593 INFO S.ServidorObject [AWT-EventQueue-0] Esperando al jugador 2...
+2023-06-14 15:41:26,704 INFO S.ServidorObject [AWT-EventQueue-0] Cliente conectado
+2023-06-14 15:41:26,707 INFO S.ClienteObject [AWT-EventQueue-0] Conexion realizada
+2023-06-14 15:41:26,712 INFO S.ServidorObject [AWT-EventQueue-0] Servidor: jhjj
+2023-06-30 22:53:59,081 INFO S.Ventana [AWT-EventQueue-0] Servidor Encendido
+2023-06-30 22:53:59,084 INFO S.Ventana [AWT-EventQueue-0] Esperando al jugador 2...
+2023-06-30 22:54:17,716 INFO S.Ventana [AWT-EventQueue-0] Cliente conectado
+2023-06-30 22:54:17,720 INFO S.j.Ventana2 [AWT-EventQueue-0] Conexion realizada
+2023-06-30 22:54:17,725 INFO S.Ventana [AWT-EventQueue-0] Servidor: dwq
+2023-07-01 08:03:09,494 INFO S.j.Ventana1 [AWT-EventQueue-0] Servidor Encendido
+2023-07-01 08:03:09,497 INFO S.j.Ventana1 [AWT-EventQueue-0] Esperando al jugador 2...
+2023-07-01 08:06:22,582 INFO S.Ventana [AWT-EventQueue-0] Servidor Encendido
+2023-07-01 08:06:22,584 INFO S.Ventana [AWT-EventQueue-0] Esperando al jugador 2...
+2023-07-01 08:07:04,652 INFO S.Ventana [AWT-EventQueue-0] Cliente conectado
+2023-07-01 08:07:04,654 INFO S.j.Ventana2 [AWT-EventQueue-0] Conexion realizada
+2023-07-01 08:07:04,658 INFO S.Ventana [AWT-EventQueue-0] Servidor: josema
+2023-07-01 08:10:37,620 INFO S.j.Ventana1 [AWT-EventQueue-0] Servidor Encendido
+2023-07-01 08:10:37,623 INFO S.j.Ventana1 [AWT-EventQueue-0] Esperando al jugador 2...
+2023-07-01 08:10:48,738 INFO S.j.Ventana1 [AWT-EventQueue-0] Cliente conectado
+2023-07-01 08:10:48,741 INFO S.j.Ventana2 [AWT-EventQueue-0] Conexion realizada
+2023-07-01 08:10:48,744 INFO S.j.Ventana1 [AWT-EventQueue-0] Servidor: abcv2
+2023-07-01 08:11:50,212 INFO S.j.Ventana1 [AWT-EventQueue-0] Servidor Encendido
+2023-07-01 08:11:50,215 INFO S.j.Ventana1 [AWT-EventQueue-0] Esperando al jugador 2...
+2023-07-01 08:12:10,002 INFO S.j.Ventana1 [AWT-EventQueue-0] Cliente conectado
+2023-07-01 08:12:10,004 INFO S.j.Ventana2 [AWT-EventQueue-0] Conexion realizada
+2023-07-01 08:12:10,008 INFO S.j.Ventana1 [AWT-EventQueue-0] Servidor: abc
+2023-07-01 08:12:40,411 INFO S.j.Ventana1 [AWT-EventQueue-0] Servidor Encendido
+2023-07-01 08:12:40,414 INFO S.j.Ventana1 [AWT-EventQueue-0] Esperando al jugador 2...
+2023-07-01 08:12:57,297 INFO S.j.Ventana1 [AWT-EventQueue-0] Cliente conectado
+2023-07-01 08:12:57,300 INFO S.j.Ventana2 [AWT-EventQueue-0] Conexion realizada
+2023-07-01 08:12:57,304 INFO S.j.Ventana1 [AWT-EventQueue-0] Servidor: josema2
